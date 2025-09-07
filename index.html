@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="app">
+        <header class="app_header">
+            <h1>Quick Quiz</h1>
+            <p class="app_tagline">Multiple choice with instant feedback & score</p>
+        </header>
+
+        <section class="card" id="quiz">
+            <div class="card_body">
+                <div class="quiz_progress">
+                    <div class="quiz_progress-bar" id="progressBar"></div>
+                </div>
+
+                <h2 class="quiz_question" id="question">Loading...</h2>
+
+                <div class="quiz_options" id="options"></div>
+
+                <div class="quiz_controls">
+                    <button class="btn btn--primary" id="nextBtn" disabled>Next</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card card--center hidden" id="result">
+            <div class="card_body">
+                <p class="result_score" id="scoreText">0 / 0</p>
+                <p class="result_message" id="scoreMessage"></p>
+                <button class="btn btn--primary" id="restartBtn">Restart Quiz</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

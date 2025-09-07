@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1221;
+    color: #e8f0ff;
+}
+
+.app{
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+.app_header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app_header h1{
+    margin: 0 0 6px;
+    font-size: 28px;
+}
+
+.app_tagline{
+    margin: 0;
+    color: #a8b3c7;
+}
+
+.card{
+    background: #101a2b;
+    border: 1px solid #1b2a41;
+    border-radius: 12px;
+}
+
+.card--center{
+    text-align: center;
+}
+
+.card_body{
+    padding: 20px;
+}
+
+.quiz_progress{
+    height: 8px;
+    background: #1b2a41;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.quiz_progress-bar{
+    height: 100%;
+    width: 0%;
+    background: #5aa9ff;
+    transition: width 200ms ease;
+}
+
+.quiz_question{
+    margin: 8px 0 14px;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.quiz_options{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.option{
+    width: 100%;
+    text-align: left;
+    background: #0f1a2a;
+    border: 1px solid #22324a;
+    color: #e8f0ff;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.option:hover{
+    background: #132036;
+}
+
+.option[disabled]{
+    opacity: 0.9;
+    cursor: not-allowed;
+}
+
+.option--selected{
+    border-color: #5aa9ff;
+}
+
+.option--correct{
+    border-color: #4cd47c;
+    background: #153024;
+}
+
+.option--wrong{
+    border-color: #ff8a80;
+    background: #301a1a;
+}
+
+.quiz_controls{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn{
+    border: none;
+    background: #5aa9ff;
+    color: #101a2b;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #4a96e6;
+}
+
+.btn:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.hidden{
+    display: none;
+}
+
+.result_score{
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.result_message{
+    color: #a8b3c7;
+    margin-bottom: 14px;
+}
